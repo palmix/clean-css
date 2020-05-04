@@ -1,6 +1,5 @@
 Optimizer = {
   options: null, // see setOptionsFrom in settings.js
-
   start: function () {
     this.worker = new Worker('./js/optimizer-worker.js')
     this.worker.onmessage = function (event) {
